@@ -3,7 +3,7 @@ import { Canvas } from '@react-three/fiber';
 import { OrbitControls, Preload, useGLTF } from '@react-three/drei';
 import { CanvasLoader } from './CanvasLoader';
 
-/* const Hero3DModel = () => {
+const Hero3DModel = () => {
   const model = useGLTF('/3dModels/laptopModel/scene.gltf');
 
   const [isMobile, setIsMobile] = useState(false);
@@ -67,10 +67,10 @@ const ComputeModel = () => {
   );
 };
 
-export default ComputeModel; */
+export default ComputeModel;
 
-const TempComponten = () => {
+/* const TempComponten = () => {
   return <></>;
 };
 
-export default TempComponten;
+export default TempComponten; */
