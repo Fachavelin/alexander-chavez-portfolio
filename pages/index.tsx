@@ -1,7 +1,6 @@
-import { Hero3DModel, Navbar } from '@/components';
 import { NextPage } from 'next';
-import { FaSpinner } from 'react-icons/fa';
 import { TypeAnimation } from 'react-type-animation';
+import { Hero3DModel, Navbar, Proyect } from '@/components';
 
 const HomePage: NextPage = () => {
   return (
@@ -10,13 +9,13 @@ const HomePage: NextPage = () => {
       <Navbar />
       {/* Hero */}
       <div
-        className='w-full grid md:grid-cols-2 min-h-screen'
+        className='w-full grid md:grid-cols-2 sm:min-h-screen'
         style={{
           backgroundImage: "url('/images/cool-background.png')",
         }}
       >
         <div className='flex justify-center items-center'>
-          <div className='text-5xl max-w-lg'>
+          <div className='text-5xl max-w-lg h-60v sm:h-auto'>
             <TypeAnimation sequence={['Desarrollador Front-End', 5000]} wrapper={'h2'} />
             <TypeAnimation
               sequence={[
@@ -36,9 +35,9 @@ const HomePage: NextPage = () => {
       </div>
       {/* About me */}
       <div className='bg-gray-900 w-full sm:h-80v'>
-        <div className='max-w-5xl mx-auto grid grid-cols-2'>
+        <div className='max-w-5xl mx-auto sm:grid grid-cols-2'>
           <div className='flex justify-center items-center'>
-            <div className='relative p-6'>
+            <div className='relative p-4'>
               <img
                 src={'/images/laptop.jpg'}
                 alt={'laptop'}
@@ -49,8 +48,8 @@ const HomePage: NextPage = () => {
           </div>
           <div className='flex justify-center items-center sm:h-80v'>
             <div className=' text-white p-4 gap-1'>
-              <p className='text-xl font-bold uppercase'>{'Sobre mi'}</p>
-              <p className='text-2xl'>
+              <p className='text-xl font-bold uppercase text-center sm:text-left'>{'Sobre mi'}</p>
+              <p className='text-2xl py-1 sm:py-0'>
                 Soy Ingeniero de Sistemas y Computación, con inclinación por el desarrollo web Front-End.
               </p>
               <p className='text-base text-gray-100 text-justify'>
@@ -65,21 +64,47 @@ const HomePage: NextPage = () => {
       </div>
       {/* Proyects */}
       <div
-        className='w-full h-90v'
+        className='w-full'
         style={{
           backgroundImage: "url('/images/cool-background.png')",
         }}
       >
-        <div className='max-w-6xl mx-auto'>
-          <p className='text-xl font-bold uppercase pt-8'>{'Mis proyectos'}</p>
-          <p className='text-2xl pt-1'>Proyectos en los cuales e trabajado</p>
-          <div className='w-full grid grid-cols-3'>
-            <div>
-              <p>Logiciel Applab Web page</p>
-              
-            </div>
-            <div></div>
-          </div>
+        <div className='max-w-5xl mx-auto'>
+          <p className='text-center sm:text-left text-xl font-bold uppercase pt-8'>{'Mis proyectos'}</p>
+          <p className='pl-4 sm:pl-0 text-2xl pt-1'>Proyectos en los cuales e trabajado</p>
+          <Proyect
+            img={'/images/logicielApplab.png'}
+            title={'Logiciel Applab Web Page'}
+            url={'https://www.logicielapplab.com/'}
+            nextJs
+            react
+            tailwindCss
+            netlify
+            github
+            githubUrl=''
+          />
+          <Proyect
+            img={'/images/diveEvolutionGps.png'}
+            title={'Dive Evolution Web Page'}
+            url={'https://www.diveevolutiongps.com/'}
+            angular
+            tailwindCss
+            netlify
+            github
+            githubUrl=''
+            odd
+          />
+          <Proyect
+            img={'/images/nazcaTravel.png'}
+            title={'Dive Evolution Web Page'}
+            url={'https://nazcatravelgps.com/'}
+            nextJs
+            react
+            tailwindCss
+            netlify
+            github
+            githubUrl=''
+          />
         </div>
       </div>
     </div>

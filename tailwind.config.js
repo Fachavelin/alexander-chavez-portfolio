@@ -19,6 +19,9 @@ module.exports = {
         '90v': '90vh',
         '100v': '100vh',
       },
+      animation: {
+        'spin-slow': 'spin 15s linear infinite',
+      },
     },
   },
   plugins: [],
