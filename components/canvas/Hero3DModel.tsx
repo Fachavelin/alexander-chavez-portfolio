@@ -31,7 +31,7 @@ const Hero3DModel = () => {
       <pointLight position={[10, 10, 10]} />
       <primitive
         object={model.scene}
-        scale={isMobile ? 0.5 : 0.9}
+        scale={isMobile ? 0.8 : 0.9}
         position={[0, -2, 2]}
         rotation={[-0.01, -0.2, -0.1]}
       />

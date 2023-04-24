@@ -29,7 +29,7 @@ export const Navbar: FC = () => {
   const [open, setOpen] = useState(false);
 
   return (
-    <div className='bg-gray-900 text-white shadow-md shadow-gray-300 fixed w-full z-50'>
+    <div className='bg-gray-900 text-white shadow-md fixed w-full z-50'>
       <div className='max-w-screen-2xl mx-auto flex justify-between items-center px-10 py-2'>
         <h1 className='flex-shrink-0 flex items-center gap-2 text-2xl'>
           Alexander Chávez

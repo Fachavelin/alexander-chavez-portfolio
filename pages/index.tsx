@@ -1,6 +1,6 @@
 import { NextPage } from 'next';
 import { TypeAnimation } from 'react-type-animation';
-import { Hero3DModel, Navbar, Proyect } from '@/components';
+import { Hero3DModel, Navbar, Proyect, ContactForm } from '@/components';
 
 const HomePage: NextPage = () => {
   return (
@@ -69,12 +69,15 @@ const HomePage: NextPage = () => {
           backgroundImage: "url('/images/cool-background.png')",
         }}
       >
-        <div className='max-w-5xl mx-auto'>
-          <p className='text-center sm:text-left text-xl font-bold uppercase pt-8'>{'Mis proyectos'}</p>
+        <div className='max-w-5xl mx-auto py-8'>
+          <p className='text-center sm:text-left text-xl font-bold uppercase'>{'Mis proyectos'}</p>
           <p className='pl-4 sm:pl-0 text-2xl pt-1'>Proyectos en los cuales e trabajado</p>
           <Proyect
             img={'/images/logicielApplab.png'}
             title={'Logiciel Applab Web Page'}
+            body={
+              'Página web de agencia de software la cual muestra sus servicios y facilita medios de contacto para sus posibles clientes'
+            }
             url={'https://www.logicielapplab.com/'}
             nextJs
             react
@@ -86,6 +89,9 @@ const HomePage: NextPage = () => {
           <Proyect
             img={'/images/diveEvolutionGps.png'}
             title={'Dive Evolution Web Page'}
+            body={
+              'Página web de agencia de software la cual muestra sus servicios y facilita medios de contacto para sus posibles clientes'
+            }
             url={'https://www.diveevolutiongps.com/'}
             angular
             tailwindCss
@@ -96,7 +102,10 @@ const HomePage: NextPage = () => {
           />
           <Proyect
             img={'/images/nazcaTravel.png'}
-            title={'Dive Evolution Web Page'}
+            title={'Nazca Travel Web Page'}
+            body={
+              'Página web de agencia de software la cual muestra sus servicios y facilita medios de contacto para sus posibles clientes'
+            }
             url={'https://nazcatravelgps.com/'}
             nextJs
             react
@@ -105,6 +114,14 @@ const HomePage: NextPage = () => {
             github
             githubUrl=''
           />
+        </div>
+      </div>
+      {/* Contact form */}
+      <div className='bg-gray-900 w-full'>
+        <div className='max-w-6xl mx-auto grid grid-cols-2'>
+          <ContactForm />
+
+          <div></div>
         </div>
       </div>
     </div>
