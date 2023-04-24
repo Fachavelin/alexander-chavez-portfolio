@@ -32,7 +32,7 @@ export const Proyect: FC<Props> = ({
   githubUrl = '',
 }) => {
   return (
-    <div className='w-full grid sm:grid-cols-5 mt-3'>
+    <div className='w-full grid sm:grid-cols-5 mt-3' data-aos='fade-up'>
       <div className={`sm:col-span-2 overflow-y-auto h-60v`}>
         <img className='w-full px-4 sm:px-0' src={img} alt='' />
       </div>

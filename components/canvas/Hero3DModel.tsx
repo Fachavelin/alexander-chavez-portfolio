@@ -73,4 +73,5 @@ export default ComputeModel;
   return <></>;
 };
 
-export default TempComponten; */
+export default TempComponten;
+ */

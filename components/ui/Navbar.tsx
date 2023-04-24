@@ -9,19 +9,19 @@ interface ILink {
 const navLinks: ILink[] = [
   {
     title: 'Inicio',
-    href: '',
+    href: '#',
   },
   {
     title: 'Acerca',
-    href: '',
+    href: '#about',
   },
   {
     title: 'Proyectos',
-    href: '',
+    href: '#proyects',
   },
   {
     title: 'Contacto',
-    href: '',
+    href: '#contact',
   },
 ];
 
@@ -37,7 +37,9 @@ export const Navbar: FC = () => {
         </h1>
         <div className='hidden sm:flex gap-4 text-base'>
           {navLinks.map((l) => (
-            <button key={l.title}>{l.title}</button>
+            <a href={l.href} key={l.title}>
+              {l.title}
+            </a>
           ))}
         </div>
         <button
@@ -49,9 +51,13 @@ export const Navbar: FC = () => {
       </div>
       <div className={`flex flex-col ${open ? 'h-full' : 'h-0'} transition duration-1700`}>
         {navLinks.map((l) => (
-          <button className={`py-2 hover:bg-gray-950 ${open ? 'scale-100' : 'scale-0'} transition`} key={l.title}>
+          <a
+            href={l.href}
+            className={`py-2 hover:bg-gray-950 ${open ? 'scale-100' : 'scale-0'} transition`}
+            key={l.title}
+          >
             {l.title}
-          </button>
+          </a>
         ))}
       </div>
     </div>
