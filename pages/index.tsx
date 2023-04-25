@@ -22,16 +22,16 @@ const HomePage: NextPage = () => {
         >
           <div className='flex justify-center items-center h-30v sm:h-auto mx-2 sm:mx-0'>
             <div className='text-3xl sm:text-5xl max-w-lg sm:h-auto pt-28 sm:pt-0'>
-              <TypeAnimation sequence={['Desarrollador Front-End', 5000]} wrapper={'h2'} />
+              <TypeAnimation sequence={['!Hola! Soy Alexander Chávez', 5000]} wrapper={'h1'} />
               <TypeAnimation
                 sequence={[
-                  'Hola! Soy Alexander Chávez',
+                  'Desarrollador Front-End Jr.',
                   2000,
-                  'Soy un apasionado desarrollador Front-end de ubicado en Ecuador',
+                  'Con conocimientos de HTML, CSS y Frameworks de Javascript',
                   2000,
                 ]}
                 repeat={Infinity}
-                wrapper={'h1'}
+                wrapper={'h2'}
               />
             </div>
           </div>
@@ -61,10 +61,10 @@ const HomePage: NextPage = () => {
                   Soy Ingeniero de Sistemas y Computación, con inclinación por el desarrollo web Front-End.
                 </p>
                 <p className='text-base text-gray-100 text-justify' data-aos='fade-right'>
-                  Como desarrollador web Jr, tengo una gran predisposición por aprender el uso de nuevas técnología y
-                  Frameworks que demanda el mercado actual. Tengo experiencia en desarrollo web a travez de trabajos que
-                  eh realizado de manera free-lance en los cuales e sabido desenvolverme con las distitan tecnología con
-                  las cuales eh trabajado.
+                  Como desarrollador web Jr, tengo una gran predisposición por aprender el uso de nuevas tecnologías y
+                  Frameworks que demanda el mercado actual. Tengo experiencia en desarrollo web a través de trabajos que
+                  eh realizado de manera free-lance en los cuales he sabido desenvolverme con las distintas tecnologías
+                  con las cuales he trabajado.
                 </p>
               </div>
             </div>
@@ -83,7 +83,7 @@ const HomePage: NextPage = () => {
               {'Mis proyectos'}
             </p>
             <p className='pl-4 sm:pl-0 text-2xl pt-1' data-aos='fade-left'>
-              Proyectos en los cuales e trabajado
+              Proyectos en los cuales he trabajado:
             </p>
             <Proyect
               img={'/images/logicielApplab.png'}
@@ -103,7 +103,7 @@ const HomePage: NextPage = () => {
               img={'/images/diveEvolutionGps.png'}
               title={'Dive Evolution Web Page'}
               body={
-                'Página web de agencia de software la cual muestra sus servicios y facilita medios de contacto para sus posibles clientes'
+                'Pagina web de agencia turística la cual se especializa en ofrecer sus servicios de cursos de buceo alternativos y paquetes turísticos '
               }
               url={'https://www.diveevolutiongps.com/'}
               angular
@@ -117,7 +117,7 @@ const HomePage: NextPage = () => {
               img={'/images/nazcaTravel.png'}
               title={'Nazca Travel Web Page'}
               body={
-                'Página web de agencia de software la cual muestra sus servicios y facilita medios de contacto para sus posibles clientes'
+                'Página web de agencia turística que ofrece sus servicios y paquetes turísticos, la cual aún se encuentra en desarrollo.'
               }
               url={'https://nazcatravelgps.com/'}
               nextJs
