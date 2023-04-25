@@ -20,8 +20,8 @@ const HomePage: NextPage = () => {
           }}
           id=''
         >
-          <div className='flex justify-center items-center'>
-            <div className='text-5xl max-w-lg h-60v sm:h-auto'>
+          <div className='flex justify-center items-center h-30v sm:h-auto mx-2 sm:mx-0'>
+            <div className='text-3xl sm:text-5xl max-w-lg sm:h-auto pt-28 sm:pt-0'>
               <TypeAnimation sequence={['Desarrollador Front-End', 5000]} wrapper={'h2'} />
               <TypeAnimation
                 sequence={[
@@ -35,7 +35,7 @@ const HomePage: NextPage = () => {
               />
             </div>
           </div>
-          <div className='row-start-1 md:row-auto overflow-x-hidden'>
+          <div className='overflow-x-hidden  h-40v sm:h-auto'>
             <Hero3DModel />
           </div>
         </div>

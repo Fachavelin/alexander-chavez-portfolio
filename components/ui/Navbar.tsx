@@ -53,7 +53,7 @@ export const Navbar: FC = () => {
         {navLinks.map((l) => (
           <a
             href={l.href}
-            className={`py-2 hover:bg-gray-950 ${open ? 'scale-100' : 'scale-0'} transition`}
+            className={`py-2 hover:bg-gray-950 ${open ? 'scale-100' : 'scale-0'} transition flex justify-center`}
             key={l.title}
           >
             {l.title}

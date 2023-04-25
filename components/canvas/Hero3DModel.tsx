@@ -6,7 +6,7 @@ import { CanvasLoader } from './CanvasLoader';
 const Hero3DModel = () => {
   const model = useGLTF('/3dModels/laptopModel/scene.gltf');
 
-  const [isMobile, setIsMobile] = useState(false);
+  /*   const [isMobile, setIsMobile] = useState(false);
 
   useEffect(() => {
     const mediaQuery = window.matchMedia('max-width: 640');
@@ -22,19 +22,14 @@ const Hero3DModel = () => {
     return () => {
       mediaQuery.removeEventListener('change', handleMediaQueryChange);
     };
-  }, []);
+  }, []); */
 
   return (
     <mesh>
       <hemisphereLight intensity={0.15} groundColor='black' />
       <spotLight position={[-20, 50, 10]} angle={0.12} penumbra={1} intensity={1} castShadow shadow-mapSize={1024} />
       <pointLight position={[10, 10, 10]} />
-      <primitive
-        object={model.scene}
-        scale={isMobile ? 0.8 : 0.9}
-        position={[0, -2, 2]}
-        rotation={[-0.01, -0.2, -0.1]}
-      />
+      <primitive object={model.scene} scale={0.9} position={[0, -2, 2]} rotation={[-0.01, -0.2, -0.1]} />
     </mesh>
   );
 };
