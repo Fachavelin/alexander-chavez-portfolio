@@ -97,7 +97,7 @@ const HomePage: NextPage = () => {
               tailwindCss
               netlify
               github
-              githubUrl=''
+              githubUrl='https://github.com/Fachavelin/logicielapplab-next-tailwind'
             />
             <Proyect
               img={'/images/diveEvolutionGps.png'}
@@ -110,7 +110,7 @@ const HomePage: NextPage = () => {
               tailwindCss
               netlify
               github
-              githubUrl=''
+              githubUrl='https://github.com/Fachavelin/DiveEvolutionWeb'
               odd
             />
             <Proyect
@@ -125,7 +125,7 @@ const HomePage: NextPage = () => {
               tailwindCss
               netlify
               github
-              githubUrl=''
+              githubUrl='https://github.com/Fachavelin/nazcatravel-web'
             />
           </div>
         </div>
